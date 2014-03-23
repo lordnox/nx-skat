@@ -1,0 +1,31 @@
+<section class="widget">
+  <h2>
+    <strong>nx-skat</strong> - Create a new game
+  </h2>
+
+  <form id="user-form" class="form-horizontal label-left" method="post" ng-submit="createGame(game)">
+      <fieldset>
+          <legend>Game Create Form <small>Some explanation text</small></legend>
+      </fieldset>
+      <fieldset>
+          <legend class="section">Basic Game Stuff</legend>
+
+          <div class="control-group">
+              <label class="control-label" for="game_name">Game Name</label>
+              <div class="controls form-group">
+                  <div class="col-sm-8"><input type="text" id="game_name" name="game_name" ng-model="game.name" class="form-control"></div>
+              </div>
+          </div>
+
+      <fieldset>
+          <legend class="section">Plugin Section <small>add plugins to change the game itself</small></legend>
+      </fieldset>
+      <div class="form-actions">
+        <div class="pull-right">
+          <button type="submit" class="btn btn-primary">Validate &amp; Submit</button>
+          <button type="button" class="btn btn-default">Cancel</button>
+        </div>
+      </div>
+  </form>
+
+</section>

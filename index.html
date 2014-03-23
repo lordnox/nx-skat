@@ -1,0 +1,38 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" ng-app="application" ng-controller="appCtrl"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" ng-app="application" ng-controller="appCtrl"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" ng-app="application" ng-controller="appCtrl"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" ng-app="application" ng-controller="appCtrl"> <!--<![endif]-->
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title ng-bind="title">RayNode - SKAT - Tobias Kopelke</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" type="text/css" href="assets/app.css"/>
+  </head>
+
+  <body class="background-dark">
+    <div id="page">
+      <div id="nav" ui-view="navigation">
+      </div>
+      <div id="main" ui-view>
+      </div>
+    </div>
+    <div id="footer">
+      <div class="widget widget-black">
+        <div class="container">
+            <center>&copy; 2012-2014 Tobias Kopelke</center>
+        </div>
+      </div>
+    </div>
+
+    <div toaster-container toaster-options="{}"></div>
+
+    <script src="assets/vendor.js"></script>
+    <script src="assets/app.js"></script>
+  </body>
+</html>
+
+
