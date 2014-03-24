@@ -1,0 +1,60 @@
+{
+  "server": {
+    "devPort": 8080,
+    "coveragePort": 5556,
+    "testPort": 9998
+  },
+  "bowerpath": "bower_components",
+  "buildpath": "build/",
+  "client": "static",
+  "appbase": "app",
+  "apppath": "app/scripts",
+  "assetspath": "scripts",
+  "testpath": "app/scripts/modules/tests/{**/*,*}.js",
+  "templatesPath": "test/templates",
+  "files": {
+
+    "test": {
+      "lib": [
+        "node_modules/chai/chai.js",
+        "test/lib/chai-should.js",
+        "test/lib/chai-expect.js",
+        "app/bower_components/angular-mocks/angular-mocks.js",
+        "test/lib/angular-unit.js",
+        "test/mocha.conf.js"
+      ],
+      "post": [
+        "test/templates/templates.js"
+      ],
+      "coverage": [
+        "app/scripts/modules/nx-skat/**/*.js",
+        "!**/test/**"
+      ]
+    },
+
+    "app": [
+      "app/scripts/modules/*/module.js",
+      "app/scripts/modules/*/app.js",
+      "app/scripts/modules/**/*.js",
+      "!**/tests/**",
+      "app/scripts/app.js"
+    ],
+    "bower": [
+      "app/bower_components/angular/angular.js",
+      "app/bower_components/angular-animate/angular-animate.js",
+      "app/bower_components/angular-ui-router/release/angular-ui-router.js",
+      "app/bower_components/AngularJS-Toaster/toaster.js"
+    ],
+    "styles": [
+      "app/bower_components/AngularJS-Toaster/toaster.css",
+      "app/styles/app.css",
+      "app/styles/styles.css"
+    ],
+    "templates": [
+      "scripts/**/*.html"
+    ],
+    "tests": [
+      "app/**/tests/**/*.js"
+    ]
+  }
+}
